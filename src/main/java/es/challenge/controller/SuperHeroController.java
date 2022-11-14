@@ -2,6 +2,7 @@ package es.challenge.controller;
 
 import es.challenge.aspectFunctions.Counter;
 import es.challenge.dtos.SuperHeroDTO;
+import es.challenge.entities.SuperHero;
 import es.challenge.services.SuperHeroRestService;
 import lombok.AllArgsConstructor;
 
@@ -29,8 +30,8 @@ public class SuperHeroController {
 
     @GetMapping
     @Counter
-    public ResponseEntity<List<SuperHeroDTO>> getAll() {
-        return ResponseEntity.ok(service.findAll());
+    public List<SuperHero> getAll() {
+        return service.findAll();
     }
 
     @GetMapping("/{id}")
