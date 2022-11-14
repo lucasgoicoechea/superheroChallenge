@@ -1,4 +1,4 @@
-package e.challenge.dtos;
+package es.challenge.dtos;
 
 public class SuperHeroDTO {
 

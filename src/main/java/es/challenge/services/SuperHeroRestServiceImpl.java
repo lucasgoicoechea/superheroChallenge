@@ -2,7 +2,7 @@ package es.challenge.services;
 
 import java.util.List;
 
-import e.challenge.dtos.SuperHeroDTO;
+import es.challenge.dtos.SuperHeroDTO;
 
 public class SuperHeroRestServiceImpl implements SuperHeroRestService {
 
