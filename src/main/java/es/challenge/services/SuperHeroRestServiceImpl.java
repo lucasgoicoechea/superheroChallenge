@@ -26,7 +26,7 @@ public class SuperHeroRestServiceImpl implements SuperHeroRestService {
 	@Autowired
 	SuperHeroDAORepository superHeroDAORepository;
 
-	@Autowired
+	
 	ParserSuperHero parserSuperHero;
 
 	@PersistenceContext
@@ -35,7 +35,7 @@ public class SuperHeroRestServiceImpl implements SuperHeroRestService {
 	@Override
 	@Cacheable("superheros")
 	public List<SuperHero> findAll() {
-		return superHeroDAORepository.findAll();
+		return (List<SuperHero>) superHeroDAORepository.findAll();
 	}
 
 	@Override

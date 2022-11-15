@@ -9,5 +9,5 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 @EnableGlobalMethodSecurity(securedEnabled = true)
 @EnableWebSecurity
 public class AppSecurityConfig extends GlobalMethodSecurityConfiguration {
-	
+
 }
