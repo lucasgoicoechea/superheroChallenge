@@ -23,7 +23,12 @@ public class SuperHero {
     private Long id;
     private String name;
     
-    public void setName(String name) {
+    public SuperHero(long l, String string) {
+		this.id = l;
+		this.name = string;
+	}
+
+	public void setName(String name) {
 		this.name = name;
 	}
 }

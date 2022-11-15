@@ -12,7 +12,12 @@ public class SuperHeroDTO {
     private Long id;
     private String name;
     
-    public Long getId() {
+    public SuperHeroDTO(long l, String string) {
+		this.id = l;
+		this.name = string;
+	}
+
+	public Long getId() {
 		return id;
 	}
     
