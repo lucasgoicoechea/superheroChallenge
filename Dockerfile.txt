@@ -1,0 +1,9 @@
+FROM openjdk:11-jre-slim
+
+MAINTAINER lgoicoechea
+
+VOLUME /tmp
+ADD superheros.jar /var/lib/superheros/
+EXPOSE 8080
+WORKDIR /var/lib/superheros/
+CMD ["java", "-Djava.security.egd=file:/dev/./urandom", "-Xms512m", "-Xmx1g", "-jar", "superheros.jar"]
